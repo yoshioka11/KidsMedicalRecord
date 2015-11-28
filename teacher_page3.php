@@ -8,6 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kidsカルテ</title>
+  <link rel="stylesheet" href="teacher_page3.css">
 </head>
 <body>
 <?php

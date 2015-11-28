@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>kidsカルテ</title>
+	<link rel="stylesheet" href="teacher_page.css">
 	
 </head>
 
@@ -19,4 +20,4 @@ print<<<EOF
 EOF;
 ?>
 
-</html>
+</html>a
