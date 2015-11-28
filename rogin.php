@@ -11,11 +11,11 @@
 		<!-- ページの連携 -->
 		<form action="teacher_page.php" method="post">
 		<!-- idの入力フォーム -->
-		ID :
+		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID : 
 		<input type="text" name="id" value=""></br></br>
 		<!-- 先生の名前の入力フォーム -->
-		Name : 
-		<input type="text" name="name" value=""></br>
+		Password : 
+		<input type="text" name="pass" value=""></br>
 		<!-- 送信ボタン -->
 		<input id="submit" type="submit" value="送信">
 	</form>
