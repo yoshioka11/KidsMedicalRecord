@@ -1,19 +1,19 @@
 <?php
 	try{
-		$id=$_POST['id'];
-		$pass=$_POST['pass'];
+		$id=$_POST['t_id'];
+		$pass=$_POST['t_pass'];
 		
 		
 		
 		//データベース接続
-		$dsn = 'mysql:dbname=KidsMedicalRecord;host=localhost'; 
+		$dsn = 'mysql:dbname=kids_mr;host=localhost'; 
 		$user= 'root';
 		$password ='root';
 		$dbh = new PDO($dsn,$user,$password);
 		$dbh->query('SET NAMES utf8');
 	
 		//SQL分　ログイン時のユーザとの照合。
-		$sql = 'SELECT * FROM teacher_db WHERE id=? AND pass=?';
+		$sql = 'SELECT * FROM teachers WHERE t_id=? AND t_pass=?';
 		$stmt = $dbh->prepare($sql);
 		// userid
 		$data[]= $id;
@@ -29,7 +29,7 @@
 			$msg = 'UserIDかPasswordが間違っています。<br/>';
 		}else{
 			session_start();
-			$_SESSION['id']=$rec['id'];
+			$_SESSION['t_id']=$rec['t_id'];
 			header('Location:teacher_page.php');
 		}
 	} catch (Exception $ex) {
@@ -47,7 +47,7 @@
     </head>
     <body>
 <?php
-	if(!isset($_SESSION['id'])){
+	if(!isset($_SESSION['t_id'])){
 		print $msg;
 	}
 

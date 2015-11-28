@@ -12,9 +12,9 @@
 		<form action="login_check.php" method="post">
 		<!-- idの入力フォーム -->
 		ID : 
-		<input type="text" name="id" value=""></br></br>
+		<input type="text" name="t_id" value=""></br></br>
 		Password : 
-		<input type="password" name="pass" value=""></br>
+		<input type="password" name="t_pass" value=""></br>
 		<!-- 送信ボタン -->
 		<input id="submit" type="submit" value="送信">
 	</form>
