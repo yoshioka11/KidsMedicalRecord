@@ -8,6 +8,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Kidsカルテ</title>
+	<link rel="stylesheet" href="karute.css">
 </head>
 <body>
 <?php
@@ -26,58 +27,47 @@
 
         $rec = $stmt->fetch(PDO::FETCH_ASSOC);
 ?>
+<h1>こどもカルテ</h1>
 <table border="1">
 	<tr>
-	<th>kids_id</th>
-	<td><?php print $rec['kids_id']; ?></td>
-	</tr>
-	<tr>
-	<th>kids_pass</th>
-	<td><?php print $rec['kids_pass']; ?></td>
-	</tr>
-	<tr>
-	<th>kids_parent</th>
-	<td><?php print $rec['kids_parent']; ?></td>
-	</tr>
-	<tr>
-	<th>kids_name</th>
+	<th>名前</th>
 	<td><?php print $rec['kids_name']; ?></td>
 	</tr>
 	<tr>
-	<th>kids_sex</th>
+	<th>保護者名</th>
+	<td><?php print $rec['kids_parent']; ?></td>
+	</tr>
+	<tr>
+	<th>性別</th>
 	<td><?php print $rec['kids_sex']; ?></td>
 	</tr>
 	<tr>
-	<th>kids_birthday</th>
+	<th>誕生日</th>
 	<td><?php print $rec['kids_birthday']; ?></td>
 	</tr>
 	<tr>
-	<th>id</th>
-	<td><?php print $rec['id']; ?></td>
-	</tr>
-	<tr>
-	<th>kids_allergy</th>
+	<th>アレルギーのあるもの</th>
 	<td><?php print $rec['kids_allergy']; ?></td>
 	</tr>
 	<tr>
-	<th>kids_disease</th>
+	<th>持病</th>
 	<td><?php print $rec['kids_disease']; ?></td>
 	</tr>
 	<tr>
-	<th>kids_character</th>
+	<th>性格や特徴など</th>
 	<td><?php print $rec['kids_character']; ?></td>
-	</tr>
+	</tr>	
 	<tr>
-	<th>kids_other</th>
-	<td><?php print $rec['kids_other']; ?></td>
-	</tr>
-	<tr>
-	<th>kids_like</th>
+	<th>好きなもの</th>
 	<td><?php print $rec['kids_like']; ?></td>
 	</tr>
 	<tr>
-	<th>kids_dislike</th>
+	<th>嫌いなもの</th>
 	<td><?php print $rec['kids_dislike']; ?></td>
+	</tr>
+	<tr>
+	<th>その他伝えておきたいこと</th>
+	<td><?php print $rec['kids_other']; ?></td>
 	</tr>
 </table>
 		
