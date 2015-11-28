@@ -1,3 +1,8 @@
+<?php
+		session_start();
+		$id = $_SESSION['id']
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,7 +11,7 @@
 </head>
 <body>
 <?php
-$id = 1234;
+
  try{
         //データベースに接続する文
         $dsn = 'mysql:dbname=KidsMedicalRecord;host=localhost';

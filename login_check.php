@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title></title>
-    </head>
-    <body>
-
-
 <?php
-
-
 		try{
 			$id=$_POST['id'];
 			$pass=$_POST['pass'];
@@ -42,19 +26,33 @@ and open the template in the editor.
 			$rec = $stmt->fetch(PDO::FETCH_ASSOC);
 			//ユーザーidかパスワードがあってるかどうか。
 			if($rec==false){
-				print 'UserIDかPasswordが間違っています。<br/>';
+				$msg = 'UserIDかPasswordが間違っています。<br/>';
 			}else{
-			echo 'aaa';
-					session_start();
-				$_SESSION['login']=1;
+				session_start();
 				$_SESSION['id']=$rec['id'];
-                                header('Location:teacher_page.php');
+				header('Location:teacher_page.php');
 			}
-		
 		} catch (Exception $ex) {
-			print'ただいま障害により大変ご迷惑をお掛けしております。';
+			print 'ただいま障害により大変ご迷惑をお掛けしております。';
 			exit();
-		}
+}
+?>
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title></title>
+    </head>
+    <body>
+<?php
+	if(!isset($_SESSION['id'])){
+		print $msg;
+	}
+
+
 ?>
 </body>
 </html>
+
