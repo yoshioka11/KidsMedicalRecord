@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>ログインページ(先生用)</title>	
-	<link rel="stylesheet" href="rogin.css">	
+	<link rel="stylesheet" href="login.css">	
 	</head>
 	<body>
 		<h1>ログインページ</h1>
