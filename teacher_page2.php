@@ -7,8 +7,9 @@
 </head>
 <body>
 
-
-testdesu
+<?php
+//タイムラインを表示するページ
+?>
 
 </body>
 </html>

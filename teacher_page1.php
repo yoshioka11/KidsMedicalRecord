@@ -8,7 +8,7 @@
 
 <?php
 
-print 'testdesu';
+//タイムラインに投稿するページ
 ?>
 </body>
 </html>

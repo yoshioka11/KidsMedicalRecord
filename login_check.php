@@ -43,7 +43,6 @@ and open the template in the editor.
 			//ユーザーidかパスワードがあってるかどうか。
 			if($rec==false){
 				print 'UserIDかPasswordが間違っています。<br/>';
-				
 			}else{
 			echo 'aaa';
 					session_start();
