@@ -6,9 +6,6 @@
 	
 </head>
 
-
-
-
 <?php
 print<<<EOF
 <frameset cols="20%,*,20%">
@@ -20,4 +17,5 @@ print<<<EOF
 </frameset>
 EOF;
 ?>
+
 </html>
