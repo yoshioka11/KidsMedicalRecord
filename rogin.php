@@ -13,7 +13,7 @@
 		<!-- idの入力フォーム -->
 		&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ID : 
 		<input type="text" name="id" value=""></br></br>
-		<!-- 先生の名前の入力フォーム -->
+		<!-- 先生のパスワードの入力フォーム -->
 		Password : 
 		<input type="text" name="pass" value=""></br>
 		<!-- 送信ボタン -->
