@@ -2,14 +2,13 @@
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Kidsカルテ</title>
+	<title>kidsカルテ</title>
+	<link rel="stylesheet" href="teacher_page.css">
 	
 </head>
 
-
-
-
 <?php
+
 print<<<EOF
 <frameset cols="20%,*,20%">
 
@@ -20,4 +19,5 @@ print<<<EOF
 </frameset>
 EOF;
 ?>
-</html>
+
+</html>a
