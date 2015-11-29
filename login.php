@@ -12,7 +12,7 @@
 		<form action="login_check.php" method="post">
 		<!-- idの入力フォーム -->
 		ID : 
-		<input type="text" name="id" value=""></br></br>
+		<input type="text" name="id" value="<?php $_SESSION['kids_name']?>"></br></br>
 		Password : 
 		<input type="text" name="pass" value=""></br>
 		<!-- 送信ボタン -->

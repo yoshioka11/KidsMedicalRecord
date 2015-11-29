@@ -36,6 +36,7 @@
               }else if($id == $rec['id']){
               
               print $rec['kids_name']."<br>";
+              $_SESSION['kids_name'] = $rec['kids_name'];
 }
 }
     } catch (Exception $ex) {
@@ -45,5 +46,9 @@
 	     
     }
 ?>
+<!-- <form action="karute.php" method="POST">
+<input type="hidden" name="kids_name" value="<?php $_SESSION['kids_name'];?>">
+<input type="submit" value="<?php print $_SESSION['kids_name'];?>"> -->
+</form>
 </body>
 </html>

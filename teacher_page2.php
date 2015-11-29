@@ -7,9 +7,7 @@
 </head>
 <body>
 
-<?php
-//タイムラインを表示するページ
-?>
+<a href="karute.php">aaaa</a>
 
 </body>
 </html>
