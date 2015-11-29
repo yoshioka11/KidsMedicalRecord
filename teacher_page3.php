@@ -26,8 +26,6 @@
       $stmt->execute();
       
       $dbh= null;
-
-<<<<<<< HEAD
           print '<CENTER>カルテ一覧</CENTER></br></br>';
           
           while(true){
@@ -41,8 +39,6 @@
 }
 }
     } catch (Exception $ex) {
-        
-=======
       print '<CENTER>カルテ一覧</CENTER></br></br>';
       
       while(true){
@@ -54,22 +50,18 @@
         }
       }
     }catch (Exception $ex){
->>>>>>> 27ced5d6e75f995080581ac6e69873827ddb80e1
         print 'ただいま障害により大変ご迷惑をおかけしております';
         exit();
     }
 ?>
-<<<<<<< HEAD
 <!-- <form action="karute.php" method="POST">
 <input type="hidden" name="kids_name" value="<?php $_SESSION['kids_name'];?>">
 <input type="submit" value="<?php print $_SESSION['kids_name'];?>"> -->
 </form>
-=======
 <script type="text/javascript">
 function fchange(){
   top.location.href="karute.php";
 }
 </script>
->>>>>>> 27ced5d6e75f995080581ac6e69873827ddb80e1
 </body>
 </html>

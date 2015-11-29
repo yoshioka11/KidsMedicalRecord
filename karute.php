@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-せいこー
-=======
 <?php
 	session_start();
 	$id = $_SESSION['t_id'];
@@ -88,4 +85,3 @@
 ?>
 </body>
 </html>
->>>>>>> 27ced5d6e75f995080581ac6e69873827ddb80e1
