@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$id = $_SESSION['t_id'];
+	$k_id = $_SESSION['k_id'];
 ?>
 
 <!DOCTYPE html>
@@ -24,11 +24,14 @@
 		$sql = 'SELECT * FROM kids';
 		$stmt = $dbh->prepare($sql);
 		$stmt->execute();
-
-        $rec = $stmt->fetch(PDO::FETCH_ASSOC);
+		while(true){
+	        $rec = $stmt->fetch(PDO::FETCH_ASSOC);
+	        if($rec==false){
+	        	break;
+	        }else if($rec['k_id'] == $k_id){
 ?>
 <h1>こどもカルテ</h1>
-<table border="1">
+<table>
 	<tr>
 	<th>名前</th>
 	<td><?php print $rec['k_name']; ?></td>
@@ -73,7 +76,8 @@
 		
 
 <?php
-
+}
+}
 		$dbh = null;
 
 		}catch (Exception $ex){

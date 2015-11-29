@@ -1,7 +1,18 @@
 body{
 	text-align:center;
+
 }
 
 table{
 	margin:20px auto;
 }
+
+tr:nth-child(odd){
+	background:#01dfa5;
+}
+
+th,td{
+	border-radius:5px;
+	width: 200px;
+}
+

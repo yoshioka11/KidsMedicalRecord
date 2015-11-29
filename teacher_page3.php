@@ -1,13 +1,13 @@
 <?php
 		session_start();
-		$id = $_SESSION['t_id']
+		$t_id = $_SESSION['t_id'];
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
-	<title>Kidsカルテ</title>
+	<title>カルテ一覧f</title>
   <link rel="stylesheet" href="teacher_page3.css">
 </head>
 <body>
@@ -25,16 +25,19 @@
       $stmt = $dbh->prepare($sql);
       $stmt->execute();
       
+      
       $dbh= null;
-
-      print '<CENTER>カルテ一覧</CENTER></br></br>';
+      ?>
+      <h2>カルテ一覧</h2>
+      <?php
       
       while(true){
         $rec = $stmt->fetch(PDO::FETCH_ASSOC); //stmtから１レコード取り出している
         if($rec==false){  //データがなければbreakで脱出
             break;
-        }else if($id == $rec['t_id']){
+        }else if($t_id == $rec['t_id']){
           print "<a href=\"karute.php\" onclick=\"fchange()\">{$rec['k_name']}</a> さん";
+          $_SESSION['k_id'] = $rec['k_id'];
         }
       }
     }catch (Exception $ex){

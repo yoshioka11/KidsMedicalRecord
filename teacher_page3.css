@@ -1,0 +1,13 @@
+body{
+	color:#01dfa5;
+}
+
+h2{
+	text-align:center;
+}
+
+li{
+	list-style-image: url(image/kids.png);
+	width:5px;
+	height:5px;
+}

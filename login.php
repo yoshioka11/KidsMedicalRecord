@@ -6,13 +6,14 @@
 	<link rel="stylesheet" href="login.css">	
 	</head>
 	<body>
-		<h1>ログインページ</h1>
+		<!-- <h1>ログインページ</h1> -->
+		<img id="img" src="image/title.png">
 
 		<!-- ページの連携 -->
 		<form action="login_check.php" method="post">
 		<!-- idの入力フォーム -->
-		ID : 
-		<input type="text" name="t_id" value=""></br></br>
+		User ID : 
+		<input type="text" name="t_id" value="">&nbsp;
 		Password : 
 		<input type="password" name="t_pass" value=""></br>
 		<!-- 送信ボタン -->
