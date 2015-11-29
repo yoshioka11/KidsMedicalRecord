@@ -35,7 +35,7 @@
               if($rec==false){  //データがなければbreakで脱出
                   break;
               }else if($t_id == $rec['t_id']){
-                print "<a href=\"karute.php\" onclick=\"fchange()\">{$rec['k_name']}</a> さん";
+                print "<p>{$rec['k_id']}：<span onclick=\"fchange()\">{$rec['k_name']}</span> さん</p>";
                 $_SESSION['k_id'] = $rec['k_id'];
               }
       }

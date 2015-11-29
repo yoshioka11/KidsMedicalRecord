@@ -1,13 +1,16 @@
 body{
-	color:#01dfa5;
+	color:black;
+	font-size:20px;
 }
 
 h2{
 	text-align:center;
+	color:#01dfa5;
+
 }
 
-li{
-	list-style-image: url(image/kids.png);
-	width:5px;
-	height:5px;
+span{
+	color:blue;
+	cursor:pointer;
+	text-decoration: underline;
 }

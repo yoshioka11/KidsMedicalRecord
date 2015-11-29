@@ -1,6 +1,6 @@
 body{
 	text-align:center;
-
+	background-image:url("image/note.png");
 }
 
 table{
@@ -14,5 +14,19 @@ tr:nth-child(odd){
 th,td{
 	border-radius:5px;
 	width: 200px;
+}
+#img1{
+	position: relative;
+	top:-300px;
+	right:-500px;
+	width:200px;
+	height:200px;
+}
+#img2{
+	position: relative;
+	top:-300px;
+	left:-500px;
+	width:200px;
+	height:200px;
 }
 

@@ -73,7 +73,8 @@
 	<td><?php print $rec['k_other']; ?></td>
 	</tr>
 </table>
-		
+	<img id="img1" src="image/karute2.png">
+	<img id="img2" src="image/karute2.png">
 
 <?php
 }

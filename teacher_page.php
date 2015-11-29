@@ -9,7 +9,7 @@
 <?php
 
 print<<<EOF
-<frameset cols="20%,*,20%">
+<frameset bordercolor="#01dfa5" border="20" cols="20%,*,20%">
 
 <frame src="teacher_page1.php">
 <frame src="teacher_page2.php">
